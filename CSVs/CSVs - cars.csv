@@ -1,0 +1,4 @@
+Make,Model,Cylinders,Displacement,Horsepower,ZeroTo60,MSRP
+Ford,Focus RS,4,6.2 L,350,4.7,"$41,120.00"
+Chevrolet,C8 Corvette,8,2.3 L,495,3.3,"$83,725.00"
+Tesla,Model Y,0,0,384,4.8,"$52,990.00"

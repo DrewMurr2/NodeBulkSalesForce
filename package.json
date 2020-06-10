@@ -7,6 +7,9 @@
   },
   "dependencies": {
     "dotenv": "^8.2.0",
-    "express": "^4.17.1"
+    "express": "^4.17.1",
+    "jsforce": "^1.9.3",
+    "node-salesforce": "^0.8.0",
+    "salesforce-node-client": "^1.2.3"
   }
 }

@@ -9,45 +9,25 @@ var getStatus =require('./library/getstatus.js')
 var getResult =require('./library/getresult.js')
 var message = require('./library/message.js')
 
-const SF_PASSWORD = process.env.SF_PASSWORD
-const SF_USERNAME = process.env.SF_USERNAME
-const SF_URL = process.env.SF_URL
-const SF_TOKEN = process.env.SF_TOKEN
-const BASE_URL = process.env.SF_URL + 'services/data/v48.0/jobs/ingest/'
-
+var config = require('./config/config.json')
 module.exports = async (params) => {
     await waitAsec() //The only reason I put this in for the demo is because I know that in real life this function will be async and take some time
 
-    console.log(params.csv_url)
     let cObjName = params.object_name + "__c";
-    let requestBody ={
-        "object":cObjName,
-        "contentType":"CSV",
-        "operation":"insert",
-        "columnDelimiter":"SEMICOLON"
-    }
-    let options={
-        headers:{
-            'Authorization': 'Bearer ',
-            'Content-Type':'application/json; charset=UTF-8',
-            'Accept':'application/json'
-            },
-        data: requestBody,
-        url:BASE_URL,
-        baseurl: BASE_URL
-    }
+    let options = config.options;
 
-    let connection = await login(SF_USERNAME,SF_PASSWORD,SF_TOKEN, SF_URL); 
+    let connection = await login(); 
 
     if( connection == null )
         return message('Fail connecting to Salesforce App', params, connection)
     options.headers['Authorization'] = 'Bearer ' + connection.accessToken
 
+
     let csvStream = await getCSVFile(params.csv_url, connection, cObjName);
     if( csvStream == null )
         return message('Fail to get CSV', params, csvStream)
 
-    let jobId = await createBatch(options);
+    let jobId = await createBatch(options, cObjName);
 
     if( jobId == null )
         return message('Fail to create Batch', params, jobId)

@@ -1,0 +1,31 @@
+[{
+        "id": 1,
+        "name": "Bill Gates",
+        "age": 64,
+        "notes": "Started MicroSoft"
+    },
+    {
+        "id": 2,
+        "name": "Skrillex",
+        "age": 32,
+        "notes": "Makes music"
+    },
+    {
+        "id": 3,
+        "name": "Luke Skywalker",
+        "age": 68,
+        "notes": "Hand cut off by his father"
+    },
+    {
+        "id": 4,
+        "name": "Jerry Seinfeld",
+        "age": 66,
+        "notes": "Funny guy"
+    },
+    {
+        "id": 5,
+        "name": "Mickey Mouse",
+        "age": 91,
+        "notes": "orginal cartoon"
+    }
+]

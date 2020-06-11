@@ -1,0 +1,20 @@
+{
+	"options": {
+		"headers": {
+			"Authorization": "Bearer ",
+			"Content-Type": "application/json; charset=UTF-8",
+			"Accept": "application/json"
+		},
+		"data": "Null",
+		"url": "https://na172.salesforce.com/services/data/v48.0/jobs/ingest/",
+		"baseurl": "https://na172.salesforce.com/services/data/v48.0/jobs/ingest/"
+	},
+	"Salesforce": {
+		"username": "zalak@rosalyn.ai",
+		"password": "zalwebdev3",
+		"securityToken": "fCajMdN8ov4dt8VNgXve40aiN",
+		"url": "https://na172.salesforce.com/",
+		"apiVersion": "48.0",
+		"fileType": "CSV"
+	}
+}

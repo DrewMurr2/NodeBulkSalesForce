@@ -2,6 +2,7 @@ var waitAsec = require('./waitAsec')
 var salesforceconnectionlogin = require('./login')
 
 module.exports = async (params) => {
+<<<<<<< HEAD
     await waitAsec() 
     let connection = await salesforceconnectionlogin(); 
     console.log("Access Token is:" + connection.accessToken)
@@ -17,6 +18,13 @@ module.exports = async (params) => {
             }
         }
     });
+=======
+    await waitAsec() //The only reason I put this in for the demo is because I know that in real life this function will be async and take some time
+    console.log(params)
+    //object_array [{},{}]
+    //object_name cars
+
+>>>>>>> 8031ac3e0197e7620e80aa6b67c0d3cc5a0e68a5
     return {
         paramsReceived: params,
         time: new Date().toLocaleString()

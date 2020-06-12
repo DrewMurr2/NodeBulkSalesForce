@@ -1,0 +1,56 @@
+[{
+        "id": 1,
+        "Make": "Ford",
+        "Model": "Focus RS",
+        "Cylinders": 4,
+        "Displacement": "6.2 L",
+        "Horsepower": 350,
+        "ZeroTo60": 4.7,
+        "MSRP": "$41,120.00",
+        "Owned By": 4
+    },
+    {
+        "id": 2,
+        "Make": "Chevrolet",
+        "Model": "C8 Corvette",
+        "Cylinders": 8,
+        "Displacement": "2.3 L",
+        "Horsepower": 495,
+        "ZeroTo60": 3.3,
+        "MSRP": "$83,725.00",
+        "Owned By": 1
+    },
+    {
+        "id": 3,
+        "Make": "Tesla",
+        "Model": "Model Y",
+        "Cylinders": 0,
+        "Displacement": 0,
+        "Horsepower": 384,
+        "ZeroTo60": 4.8,
+        "MSRP": "$52,990.00",
+        "Owned By": 1
+    },
+    {
+        "id": 4,
+        "Make": "Ford",
+        "Model": "Mustang GT",
+        "Cylinders": 8,
+        "Displacement": "5 L",
+        "Horsepower": 460,
+        "ZeroTo60": 4.5,
+        "MSRP": "$35,630.00",
+        "Owned By": 4
+    },
+    {
+        "id": 5,
+        "Make": "Dodge",
+        "Model": "Challenger R/T",
+        "Cylinders": 8,
+        "Displacement": "5.7 L",
+        "Horsepower": 372,
+        "ZeroTo60": 5.1,
+        "MSRP": "$34,995.00",
+        "Owned By": 4
+    }
+]
